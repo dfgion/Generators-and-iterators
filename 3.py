@@ -9,7 +9,7 @@ class FlatIterator:
         return self
 
     def __next__(self):
-        try: # Конструкция используется для завершения итерации в случае исключения list out of range, так как мы присваиваем self.index значения без информации о длине списка
+        try: # Конструкция используется для завершения итерации в случае исключения list index out of range, так как мы присваиваем self.index значения без информации о длине списка
             item = self.result[self.index]
             self.index += 1
             return item 
