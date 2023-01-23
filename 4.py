@@ -1,9 +1,9 @@
 import types
 
 def flat_generator(list_of_lists):
-    for item in get_correct_list(list_of_lists):
+    for item in _get_correct_list(list_of_lists):
         yield item
-def get_correct_list(list_of_lists):
+def _get_correct_list(list_of_lists):
         result = []
         for element in list_of_lists:
             if isinstance(element, list):
